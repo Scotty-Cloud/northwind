@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fruits & veggies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css"/>
+  </head>
+  <body>
+    <main>
+      <!-- First dropdown -->
+      <select id="type-dropdown">
+        <option value="all">View All</option>
+        <option value="categories">Categories</option>
+      </select>
+
+      <!-- Second dropdown (hidden by default) -->
+      <select id="category-dropdown" style="display: none">
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+      </select>
+
+      <!-- Results container -->
+      <div id="results"></div>
+    </main>
+    <script src="vegetable.js"></script>
+  </body>
+</html>
