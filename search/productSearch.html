@@ -4,24 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products Page</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
-      <div id="search-container">
-        <select id="search-type" onchange="handleSearchTypeChange()">
-          <option value="all">Select One...</option>
-          <option value="name">View All</option>
-          <option value="searchby-category">Search by category</option>
+      <div>
+        <label for="searchTypeSelect">Search by</label>
+        <select id="searchTypeSelect">
+          <option value="">Select</option>
+          <option value="viewAll">View all</option>
+          <option value="category">Category</option>
         </select>
-        <div id="category-dropdown-container" style="display: none">
-          <select name="" id="category-dropdown">
-            <!-- categories will be populated here -->
-          </select>
-        </div>
-        <div id="product-list-container">
-          <!-- products will be populated here -->
-        </div>
+        <label for="categories" id="categorySelectLabel" style="display: none">Categories:</label>
+        <select id="categories" style="display: none"></select>
       </div>
+      <div id="productGrid"></div>
     </main>
     <script src="search.js"></script>
   </body>
